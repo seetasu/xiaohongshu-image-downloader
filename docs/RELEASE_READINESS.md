@@ -42,7 +42,7 @@
 - `chrome.storage.local`
   - `background.js` 用它记录默认下载文件夹下的素材包名称计数。
 - 弹窗中的 IndexedDB
-  - 数据库：`xhs-image-downloader`
+  - 数据库：`xhs-image-organizer`
   - 对象仓库：`settings`
   - 保存用户选择的文件夹句柄和保存模式。
 - 浏览器默认下载目录

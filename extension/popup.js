@@ -1,4 +1,4 @@
-const DB_NAME = "xhs-image-downloader";
+const DB_NAME = "xhs-image-organizer";
 const STORE_NAME = "settings";
 const DIRECTORY_KEY = "selectedDirectory";
 
