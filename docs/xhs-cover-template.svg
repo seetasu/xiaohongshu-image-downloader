@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f4f5f6"/>
+    </linearGradient>
+    <linearGradient id="buttonRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef1f2d"/>
+      <stop offset="1" stop-color="#e0222c"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1b1b1b" flood-opacity=".14"/>
+    </filter>
+    <filter id="cardShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#1b1b1b" flood-opacity=".10"/>
+    </filter>
+    <filter id="titleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#000000" flood-opacity=".18"/>
+    </filter>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title-red { fill: #df2d34; font-weight: 900; font-size: 86px; letter-spacing: 2px; }
+      .title-black { fill: #202124; font-weight: 900; font-size: 82px; letter-spacing: 1px; }
+      .subtitle { fill: #666a70; font-weight: 500; font-size: 34px; }
+      .ui-title { fill: #111; font-weight: 800; font-size: 30px; }
+      .ui-text { fill: #4f565e; font-size: 20px; }
+      .ui-label { fill: #3a3f45; font-size: 21px; font-weight: 500; }
+      .small { fill: #5e6570; font-size: 16px; }
+      .chip-text { fill: #2a2d31; font-size: 28px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+
+  <!-- Background shapes -->
+  <circle cx="1030" cy="-90" r="310" fill="#edf0f3" opacity=".62"/>
+  <circle cx="-120" cy="1220" r="260" fill="#ffffff" opacity=".85"/>
+  <circle cx="-118" cy="1220" r="208" fill="none" stroke="#ffffff" stroke-width="3" opacity=".8"/>
+
+  <!-- Dotted decoration -->
+  <g opacity=".65" fill="#d9dde2">
+    <circle cx="36" cy="36" r="2.6"/><circle cx="54" cy="36" r="2.6"/><circle cx="72" cy="36" r="2.6"/><circle cx="90" cy="36" r="2.6"/><circle cx="108" cy="36" r="2.6"/><circle cx="126" cy="36" r="2.6"/><circle cx="144" cy="36" r="2.6"/><circle cx="162" cy="36" r="2.6"/>
+    <circle cx="36" cy="54" r="2.6"/><circle cx="54" cy="54" r="2.6"/><circle cx="72" cy="54" r="2.6"/><circle cx="90" cy="54" r="2.6"/><circle cx="108" cy="54" r="2.6"/><circle cx="126" cy="54" r="2.6"/><circle cx="144" cy="54" r="2.6"/><circle cx="162" cy="54" r="2.6"/>
+    <circle cx="36" cy="72" r="2.6"/><circle cx="54" cy="72" r="2.6"/><circle cx="72" cy="72" r="2.6"/><circle cx="90" cy="72" r="2.6"/><circle cx="108" cy="72" r="2.6"/><circle cx="126" cy="72" r="2.6"/><circle cx="144" cy="72" r="2.6"/><circle cx="162" cy="72" r="2.6"/>
+    <circle cx="36" cy="90" r="2.6"/><circle cx="54" cy="90" r="2.6"/><circle cx="72" cy="90" r="2.6"/><circle cx="90" cy="90" r="2.6"/><circle cx="108" cy="90" r="2.6"/><circle cx="126" cy="90" r="2.6"/><circle cx="144" cy="90" r="2.6"/><circle cx="162" cy="90" r="2.6"/>
+  </g>
+
+  <!-- Right-side floating material cards. Replace image rectangles with your own images. -->
+  <g opacity=".9">
+    <g transform="translate(833 20) rotate(9)" filter="url(#cardShadow)">
+      <rect width="200" height="250" rx="24" fill="#fff"/>
+      <rect x="16" y="16" width="168" height="218" rx="14" fill="#f3f4f6"/>
+      <text class="font small" x="34" y="48">2024.05 日程计划</text>
+      <g opacity=".9">
+        <rect x="36" y="68" width="24" height="18" rx="3" fill="#f8e987"/>
+        <rect x="66" y="68" width="24" height="18" rx="3" fill="#d6f0df"/>
+        <rect x="96" y="68" width="24" height="18" rx="3" fill="#efd8f7"/>
+        <rect x="126" y="68" width="24" height="18" rx="3" fill="#ffe0a6"/>
+        <rect x="36" y="94" width="24" height="18" rx="3" fill="#cbe9f6"/>
+        <rect x="66" y="94" width="54" height="18" rx="3" fill="#fff2a8"/>
+        <rect x="126" y="94" width="24" height="18" rx="3" fill="#d9f0d2"/>
+      </g>
+    </g>
+
+    <g transform="translate(785 278) rotate(8)" filter="url(#cardShadow)">
+      <rect width="196" height="230" rx="24" fill="#fff"/>
+      <rect x="24" y="24" width="148" height="148" rx="16" fill="#ff9c2e"/>
+      <path d="M66 56c34 2 44 20 39 52-31 5-49-8-54-38-1-8 5-14 15-14Z" fill="#d9ff2e"/>
+      <path d="M107 98c21-23 47-25 63-10-5 25-27 36-56 29-9-2-12-12-7-19Z" fill="#b8f72e"/>
+      <text class="font" x="70" y="194" font-size="19" font-weight="800">亲宝宝</text>
+      <rect x="22" y="200" width="150" height="24" fill="#fff59e" opacity=".9"/>
+      <text class="font" x="30" y="219" font-size="18" font-weight="800">宝宝辅食App!</text>
+    </g>
+
+    <g transform="translate(775 530) rotate(8)" filter="url(#cardShadow)">
+      <rect width="190" height="235" rx="24" fill="#fff"/>
+      <rect x="18" y="18" width="154" height="199" rx="16" fill="#f5f6ff"/>
+      <g stroke="#e8e9f5" stroke-width="1">
+        <path d="M18 58h154M18 98h154M18 138h154M18 178h154"/>
+        <path d="M55 18v199M94 18v199M133 18v199"/>
+      </g>
+      <rect x="62" y="104" width="42" height="28" rx="5" fill="#dbeadf"/>
+      <rect x="112" y="146" width="36" height="24" rx="5" fill="#eadffc"/>
+    </g>
+
+    <g transform="translate(962 584) rotate(9)" filter="url(#cardShadow)">
+      <rect width="210" height="250" rx="24" fill="#fff"/>
+      <rect x="20" y="20" width="170" height="210" rx="17" fill="#2e2a26"/>
+      <rect x="40" y="40" width="122" height="34" rx="12" fill="#40372e"/>
+      <rect x="40" y="88" width="122" height="34" rx="12" fill="#2d3a43"/>
+      <rect x="40" y="136" width="122" height="34" rx="12" fill="#28362d"/>
+      <circle cx="58" cy="57" r="10" fill="#ffe2a4"/>
+      <circle cx="58" cy="105" r="10" fill="#9eb7ff"/>
+      <circle cx="58" cy="153" r="10" fill="#8be28f"/>
+    </g>
+
+    <g transform="translate(928 820) rotate(7)" filter="url(#cardShadow)">
+      <rect width="210" height="250" rx="24" fill="#fff"/>
+      <rect x="20" y="20" width="170" height="210" rx="17" fill="#e6ebef"/>
+      <circle cx="104" cy="118" r="36" fill="#73c85b"/>
+      <text class="font" x="44" y="54" font-size="17" font-weight="800" fill="#b4f321">新手妈妈必用</text>
+      <g fill="#ffb02e">
+        <rect x="47" y="82" width="30" height="30" rx="8"/>
+        <rect x="132" y="82" width="30" height="30" rx="8"/>
+      </g>
+    </g>
+
+    <g transform="translate(842 1046) rotate(8)" filter="url(#cardShadow)" opacity=".65">
+      <rect width="210" height="250" rx="24" fill="#fff"/>
+      <rect x="18" y="18" width="174" height="214" rx="16" fill="#fafafa"/>
+      <g stroke="#ececf2" stroke-width="1">
+        <path d="M18 58h174M18 98h174M18 138h174M18 178h174"/>
+        <path d="M60 18v214M102 18v214M144 18v214"/>
+      </g>
+      <rect x="68" y="92" width="42" height="28" rx="5" fill="#f3e8a4"/>
+      <rect x="116" y="144" width="42" height="28" rx="5" fill="#e3f1d8"/>
+    </g>
+  </g>
+
+  <!-- Main headline -->
+  <g class="font">
+    <text class="title-red" x="72" y="288">小红书素材</text>
+    <text class="title-black" x="72" y="410" filter="url(#titleShadow)">一键整理</text>
+    <text class="subtitle" x="74" y="522">批量保存图片｜按帖子自动归档</text>
+    <rect x="74" y="558" width="48" height="7" rx="3.5" fill="#df2d34"/>
+  </g>
+
+  <!-- Main plugin mockup -->
+  <g transform="translate(94 604)" filter="url(#softShadow)">
+    <rect width="690" height="620" rx="30" fill="#fff"/>
+    <rect width="690" height="96" rx="30" fill="#fff"/>
+    <path d="M0 96h690" stroke="#ece8e2" stroke-width="1.4"/>
+
+    <!-- Header -->
+    <g transform="translate(38 27)">
+      <rect width="52" height="52" rx="12" fill="#d2393a"/>
+      <path d="M26 10v28" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M15 27l11 11 11-11" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="39" cy="13" r="4.5" fill="#fff"/>
+      <rect x="13" y="28" width="26" height="14" rx="3" fill="#fff" opacity=".22"/>
+    </g>
+    <text class="font ui-title" x="112" y="64">一键下载</text>
+    <text class="font" x="520" y="64" font-size="31" fill="#3a3a3a">⚲</text>
+    <text class="font" x="578" y="64" font-size="36" fill="#3a3a3a">⋮</text>
+    <text class="font" x="635" y="64" font-size="38" fill="#3a3a3a">×</text>
+
+    <!-- Status -->
+    <circle cx="54" cy="130" r="15" fill="#d2393a"/>
+    <text class="font" x="46" y="138" font-size="18" font-weight="800" fill="#fff">✓</text>
+    <text class="font ui-text" x="84" y="138">已识别</text>
+    <text class="font" x="154" y="138" font-size="22" font-weight="800" fill="#d2393a">12</text>
+    <text class="font ui-text" x="188" y="138">张图片</text>
+
+    <!-- Fields -->
+    <text class="font ui-label" x="40" y="190">保存路径</text>
+    <rect x="145" y="158" width="405" height="42" rx="8" fill="#fbfbfb" stroke="#ddd8d0"/>
+    <text class="font small" x="162" y="185">/素材库/小红书/2024-05/育儿经验</text>
+    <rect x="568" y="158" width="84" height="42" rx="10" fill="#fff" stroke="#ddd8d0"/>
+    <text class="font" x="591" y="185" font-size="18" font-weight="600" fill="#4b4b4b">更改</text>
+
+    <text class="font ui-label" x="40" y="244">存储为</text>
+    <rect x="145" y="212" width="505" height="42" rx="8" fill="#fbfbfb" stroke="#ddd8d0"/>
+    <text class="font small" x="162" y="239">原图（推荐）</text>
+    <text class="font" x="625" y="239" font-size="20" fill="#969ba0">⌄</text>
+
+    <!-- Thumbnail placeholders. Replace rects/images with your own images. -->
+    <g transform="translate(40 282)">
+      <rect width="90" height="90" rx="9" fill="#f6faf4" stroke="#ece8e2"/>
+      <rect x="3" y="3" width="84" height="84" rx="7" fill="#dfeee2"/>
+      <rect x="105" width="90" height="90" rx="9" fill="#f8f4ff" stroke="#ece8e2"/>
+      <rect x="108" y="3" width="84" height="84" rx="7" fill="#eee2ff"/>
+      <rect x="210" width="90" height="90" rx="9" fill="#fff8d9" stroke="#ece8e2"/>
+      <rect x="213" y="3" width="84" height="84" rx="7" fill="#ff9c2e"/>
+      <path d="M248 29c20 1 27 12 24 31-19 3-30-5-33-23-1-5 3-8 9-8Z" fill="#d9ff2e"/>
+      <rect x="315" width="90" height="90" rx="9" fill="#f5f9ff" stroke="#ece8e2"/>
+      <rect x="318" y="3" width="84" height="84" rx="7" fill="#eef6ff"/>
+      <rect x="420" width="90" height="90" rx="9" fill="#2f2a27" stroke="#ece8e2"/>
+      <rect x="423" y="3" width="84" height="84" rx="7" fill="#2c2927"/>
+      <rect x="525" width="90" height="90" rx="9" fill="#f5f6ff" stroke="#ece8e2"/>
+      <rect x="528" y="3" width="84" height="84" rx="7" fill="#f5f6ff"/>
+
+      <rect y="105" width="90" height="90" rx="9" fill="#f4f8ff" stroke="#ece8e2"/>
+      <rect x="105" y="105" width="90" height="90" rx="9" fill="#fff" stroke="#ece8e2"/>
+      <rect x="210" y="105" width="90" height="90" rx="9" fill="#f5fff5" stroke="#ece8e2"/>
+      <rect x="315" y="105" width="90" height="90" rx="9" fill="#e9edf2" stroke="#ece8e2"/>
+      <rect x="420" y="105" width="90" height="90" rx="9" fill="#f7f2ff" stroke="#ece8e2"/>
+      <rect x="525" y="105" width="90" height="90" rx="9" fill="#fff6e9" stroke="#ece8e2"/>
+    </g>
+
+    <rect x="40" y="538" width="612" height="58" rx="16" fill="url(#buttonRed)"/>
+    <text class="font" x="342" y="575" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">下载全部图片</text>
+  </g>
+
+  <!-- Bottom use-case chips -->
+  <g class="font" filter="url(#cardShadow)">
+    <g transform="translate(92 1304)">
+      <rect width="260" height="70" rx="35" fill="#fff" stroke="#e7e3dd"/>
+      <g transform="translate(38 23)" fill="none" stroke="#e52f37" stroke-width="3">
+        <rect width="24" height="24" rx="4"/>
+        <path d="M12 0v24M0 12h24"/>
+      </g>
+      <text class="chip-text" x="102" y="46">运营拆解</text>
+    </g>
+    <g transform="translate(410 1304)">
+      <rect width="260" height="70" rx="35" fill="#fff" stroke="#e7e3dd"/>
+      <path d="M54 21l7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2Z" fill="none" stroke="#e52f37" stroke-width="3" stroke-linejoin="round"/>
+      <text class="chip-text" x="102" y="46">设计参考</text>
+    </g>
+    <g transform="translate(730 1304)">
+      <rect width="260" height="70" rx="35" fill="#fff" stroke="#e7e3dd"/>
+      <g transform="translate(38 20)" fill="none" stroke="#e52f37" stroke-width="3">
+        <circle cx="14" cy="14" r="14"/>
+        <path d="M14 28v8M7 36h14"/>
+      </g>
+      <text class="chip-text" x="102" y="46">选题收集</text>
+    </g>
+  </g>
+</svg>
