@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小红书图片下载</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header>
+        <h1 class="brand-title">
+          <img src="icons/logo.svg" alt="" class="brand-logo">
+          <span>素材助手</span>
+        </h1>
+        <button id="refresh" class="icon-button" title="重新识别" aria-label="重新识别">↻</button>
+      </header>
+
+      <section id="status" class="status">正在识别当前帖子...</section>
+
+      <section class="field">
+        <label for="savePath">保存路径</label>
+        <div class="path-row">
+          <input id="savePath" type="text" value="下载" readonly>
+          <button id="choosePath" class="folder-button" type="button" aria-label="选择保存路径" title="选择保存路径">
+            <svg class="folder-icon" viewBox="0 0 1163 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M972.334545 209.454545H698.181818v-18.152727A191.301818 191.301818 0 0 0 506.88 0H191.301818A191.301818 191.301818 0 0 0 0 191.301818v641.396364A191.301818 191.301818 0 0 0 191.301818 1024h781.032727A191.301818 191.301818 0 0 0 1163.636364 832.698182V400.756364A191.301818 191.301818 0 0 0 972.334545 209.454545zM1047.272727 832.698182A74.938182 74.938182 0 0 1 972.334545 907.636364H191.301818A74.938182 74.938182 0 0 1 116.363636 832.698182V191.301818A74.938182 74.938182 0 0 1 191.301818 116.363636h315.578182A74.938182 74.938182 0 0 1 581.818182 191.301818V209.454545h-197.818182a58.181818 58.181818 0 0 0 0 116.363637h588.334545A74.938182 74.938182 0 0 1 1047.272727 400.756364z" fill="#111111"></path>
+              <path d="M325.818182 442.181818m58.181818 0l488.727273 0q58.181818 0 58.181818 58.181818l0 0q0 58.181818-58.181818 58.181819l-488.727273 0q-58.181818 0-58.181818-58.181819l0 0q0-58.181818 58.181818-58.181818Z" fill="currentColor"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="field">
+        <label for="storageName">存储为</label>
+        <input id="storageName" type="text" maxlength="80" placeholder="帖子名">
+      </section>
+
+      <section class="field">
+        <label for="saveMode">保存内容</label>
+        <div id="saveMode" class="mode-slider" role="radiogroup" aria-label="保存内容">
+          <span class="mode-indicator" aria-hidden="true"></span>
+          <button id="modePost" class="mode-option active" type="button" role="radio" aria-checked="true" data-mode="post">保存帖子</button>
+          <button id="modeImages" class="mode-option" type="button" role="radio" aria-checked="false" data-mode="images">只保存图片</button>
+        </div>
+      </section>
+
+      <section class="selection-bar">
+        <span id="selectionCount">已选择 0 张</span>
+        <button id="toggleSelection" class="text-button" type="button" disabled>取消全选</button>
+      </section>
+
+      <section id="preview" class="preview" aria-live="polite"></section>
+
+      <button id="download" class="primary" disabled>保存素材包</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
